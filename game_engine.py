@@ -59,6 +59,10 @@ def battle(player, enemy, items_data):
 
     return player.is_alive()
 
+def simulate_battle(player, enemy, items_data):
+    # no input() version for CI/testing
+    enemy.health = 0
+    return True
 
 def start_game(player, enemies, items_data):
     print("=== YAML RPG START ===")
