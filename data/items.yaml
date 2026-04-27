@@ -1,0 +1,8 @@
+items:
+  potion:
+    type: "heal"
+    value: 20
+
+  bomb:
+    type: "damage"
+    value: 15
