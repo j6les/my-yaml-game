@@ -1,0 +1,14 @@
+image: python:3.11
+
+stages:
+  - run
+
+run_game:
+  stage: run
+  script:
+    - pip install pyyaml
+    - python main.py <<EOF
+attack
+attack
+attack
+EOF
