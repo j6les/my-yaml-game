@@ -1,6 +1,6 @@
 from yaml_loader import load_yaml
 from models import Player, Enemy
-from game_engine import start_game, simulate_game
+from game_engine import start_game
 
 def main():
     player_data = load_yaml("data/player.yaml")
