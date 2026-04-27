@@ -6,3 +6,7 @@ enemies:
   - name: "Orc"
     health: 50
     attack: 8
+
+  - name: "Dragon"
+    health: 120
+    attack: 15
