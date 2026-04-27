@@ -1,10 +1,10 @@
 image: python:3.11
 
 stages:
-  - run
+  - test
 
 run_game:
-  stage: run
+  stage: test
   script:
     - pip install pyyaml
-    - python main.py
+    - python main.py ci
