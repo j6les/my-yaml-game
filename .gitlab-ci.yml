@@ -7,8 +7,4 @@ run_game:
   stage: run
   script:
     - pip install pyyaml
-    - python main.py <<EOF
-attack
-attack
-attack
-EOF
+    - python main.py
