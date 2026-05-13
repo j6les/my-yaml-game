@@ -1,10 +1,24 @@
 image: python:3.11
 
 stages:
+  - install
   - test
+  - deploy
 
-run_game:
+before_script:
+  - pip install pyyaml
+
+install_job:
+  stage: install
+  script:
+    - echo "Installing dependencies"
+
+test_job:
   stage: test
   script:
-    - pip install pyyaml
     - python main.py ci
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo "Deploying YAML RPG"

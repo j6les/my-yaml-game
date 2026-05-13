@@ -3,6 +3,10 @@ enemies:
     health: 30
     attack: 5
 
+  - name: "Goblin 2"
+    health: 30
+    attack: 5
+
   - name: "Orc"
     health: 50
     attack: 8
